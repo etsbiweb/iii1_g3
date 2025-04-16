@@ -13,3 +13,4 @@ Aplikacija omogućava vođenje evidencije o fudbalskim igračima, njihovim pozic
    - Dodavanje utakmica i povezivanje s igračima
    - Prikaz statistike
 3. Koristiti forme za unos i validaciju podataka u PHP-u.
+## 😉 Upustvo za github: https://github.com/zinaid/ArcosixGitTutorial/blob/main/tutorial.md
