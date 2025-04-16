@@ -1,16 +1,22 @@
-# Projekt: Sistem za upravljanje fudbalskom ekipom
+# Sistem za upravljanje fudbalskom ekipom
 
-## 🎯 Opis
-Aplikacija omogućava vođenje evidencije o fudbalskim igračima, njihovim pozicijama, utakmicama i statistikama.
+## 🎯 Cilj projekta
+Razviti sistem za evidenciju igrača, treninga, utakmica i statistika fudbalskog kluba.
 
-## 🧠 Šta učenici trebaju uraditi
-1. Kreirati bazu `fudbal` sa tabelama:
-   - `igraci(id, ime, prezime, pozicija, broj_dresa)`
-   - `utakmice(id, protivnik, datum)`
-   - `statistike(id, igrac_id, utakmica_id, golovi, asistencije)`
-2. Napraviti funkcionalnosti za:
-   - Dodavanje i prikaz igrača
-   - Dodavanje utakmica i povezivanje s igračima
-   - Prikaz statistike
-3. Koristiti forme za unos i validaciju podataka u PHP-u.
+## 🛠️ Tehnologije
+- HTML, CSS
+- PHP
+- MySQL
+
+## ✅ Funkcionalnosti koje učenici trebaju implementirati
+1. Dodavanje i uređivanje igrača (ime, pozicija, broj, statistike)
+2. Planiranje treninga i utakmica (datum, protivnik, lokacija)
+3. Pregled učinka igrača (golovi, asistencije, minutaža)
+4. Administracija korisnika i uloga
+5. Statistika po sezoni
+
+## 💻 Uloge
+- **Trener/Admin**: upravljanje timom, treninzima i statistikama
+- **Igrač**: pregled vlastitih podataka i trening rasporeda
+
 ## 😉 Upustvo za github: https://github.com/zinaid/ArcosixGitTutorial/blob/main/tutorial.md
