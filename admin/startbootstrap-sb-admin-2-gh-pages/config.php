@@ -1,10 +1,10 @@
 <?php
-$host = 'localhost';
-$db = 'jedinstvo';
-$user = 'root'; // promeni po potrebi
-$pass = '';     // promeni po potrebi
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "moja_baza";
 
-$conn = new mysqli($host, $user, $pass, $db);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

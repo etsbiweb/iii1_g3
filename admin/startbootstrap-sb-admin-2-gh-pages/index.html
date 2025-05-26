@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>ADMIN - Dashboard</title>
 
     <!-- Custom fonts for this template-->
@@ -16,6 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -64,6 +65,423 @@
         .table-striped tbody tr:nth-of-type(odd) {
             background-color: var(--jedinstvo-gray);
         }
+
+        .bg-gradient-primary {
+        background-color: #0b1123;
+        background-image: linear-gradient(180deg, #750b01 10%, #eb1d09 100%);
+        background-size: cover;
+    }
+    :root {
+        --jedinstvo-red: #c10000;
+        --jedinstvo-light: #ffffff;
+        --jedinstvo-dark-red: #800000;
+        --jedinstvo-gray: #f4f4f4;
+    }
+    .bg-jedinstvo {
+        background-color: var(--jedinstvo-red) !important;
+        color: white !important;
+    }
+    .border-left-jedinstvo {
+        border-left: 0.25rem solid var(--jedinstvo-red) !important;
+    }
+    .text-jedinstvo {
+        color: var(--jedinstvo-red) !important;
+    }
+    .btn-jedinstvo {
+        background-color: var(--jedinstvo-red);
+        color: white;
+        border: none;
+    }
+    .btn-jedinstvo:hover {
+        background-color: var(--jedinstvo-dark-red);
+    }
+    .card-body i {
+        font-size: 2rem;
+    }
+    <style>
+    :root {
+        --jedinstvo-red: #c10000; /* Primary color */
+        --jedinstvo-light: #ffffff; /* Light color */
+        --jedinstvo-dark-red: #800000; /* Darker shade of red */
+        --jedinstvo-gray: #f4f4f4; /* Gray color for backgrounds */
+        --jedinstvo-blue: #003366; /* New color for branding */
+    }
+
+    .bg-gradient-primary {
+        background-color: var(--jedinstvo-blue);
+        background-image: linear-gradient(180deg, #00509e 10%, #007bff 100%);
+        background-size: cover;
+    }
+
+    .bg-jedinstvo {
+        background-color: var(--jedinstvo-red) !important;
+        color: var(--jedinstvo-light) !important;
+    }
+
+    .border-left-jedinstvo {
+        border-left: 0.25rem solid var(--jedinstvo-red) !important;
+    }
+
+    .text-jedinstvo {
+        color: var(--jedinstvo-red) !important;
+    }
+
+    .btn-jedinstvo {
+        background-color: var(--jedinstvo-red);
+        color: var(--jedinstvo-light);
+        border: none;
+    }
+
+    .btn-jedinstvo:hover {
+        background-color: var(--jedinstvo-dark-red);
+    }
+
+    .card-body i {
+        font-size: 2rem;
+    }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: var(--jedinstvo-gray);
+    }
+
+    .table-striped tbody tr:nth-of-type(even) {
+        background-color: var(--jedinstvo-light);
+    }
+
+    .sidebar-heading {
+        color: var(--jedinstvo-red);
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: var(--jedinstvo-blue);
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: var(--jedinstvo-red);
+    }
+
+    .dropdown-item {
+        color: var(--jedinstvo-blue);
+    }
+
+    .dropdown-item:hover {
+        background-color: var(--jedinstvo-red);
+        color: var(--jedinstvo-light);
+    }
+
+    .badge {
+        background-color: var(--jedinstvo-red);
+        color: var(--jedinstvo-light);
+    }
+
+    .badge-warning {
+        background-color: #ffc107; /* Custom warning color */
+    }
+
+    .badge-danger {
+        background-color: #dc3545; /* Custom danger color */
+    }
+
+    .badge-success {
+        background-color: #28a745; /* Custom success color */
+    }
+
+    .badge-dark {
+        background-color: #343a40; /* Custom dark color */
+    }
+
+    .bg-gradient-primary {
+    background-color: var(--jedinstvo-blue);
+    background-image: linear-gradient(180deg, #ab2417 10%, #0a3665 100%);
+    background-size: cover;
+}
+.sidebar-heading {
+        color: var(--jedinstvo-red);
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: var(--jedinstvo-blue);
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: var(--jedinstvo-red);
+    }
+    .dropdown-item {
+        color: var(--jedinstvo-blue);
+    }
+    .dropdown-item:hover {
+        background-color: var(--jedinstvo-red);
+        color: var(--jedinstvo-light);
+    }
+    .badge {
+        background-color: var(--jedinstvo-red);
+        color: var(--jedinstvo-light);
+    }
+    .badge-warning {
+        background-color: #ffc107; /* Custom warning color */
+    }
+    .badge-danger {
+        background-color: #dc3545; /* Custom danger color */
+    }
+    .badge-success {
+        background-color: #28a745; /* Custom success color */
+    }
+    .badge-dark {
+        background-color: #343a40; /* Custom dark color */
+    }
+    .sidebar-heading {
+        color: var(--jedinstvo-red);
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: var(--jedinstvo-blue);
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: var(--jedinstvo-red);
+    }
+    .dropdown-item {
+        color: var(--jedinstvo-blue);
+    }
+    .dropdown-item:hover {
+        background-color: var(--jedinstvo-red);
+        color: var(--jedinstvo-light);
+    }
+    .badge {
+        background-color: var(--jedinstvo-red);
+        color: var(--jedinstvo-light);
+    }
+    .badge-warning {
+        background-color: #ffc107; /* Custom warning color */
+    }
+    .badge-danger {
+        background-color: #dc3545; /* Custom danger color */
+    }
+    .badge-success {
+        background-color: #28a745; /* Custom success color */
+    }
+    .badge-dark {
+        background-color: #343a40; /* Custom dark color */
+    }
+    .text-jedinstvo {
+    color: #c8102e !important; /* Klupska crvena */
+}
+
+.border-left-jedinstvo {
+    border-left: 0.25rem solid #c8102e !important;
+}
+
+.card {
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    font-size: 0.9rem;
+    padding: 0.5em 0.75em;
+    border-radius: 0.5rem;
+}
+
+body {
+    background-color: #f8f9fc;
+}
+
+h1, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+/* Boje i izgled sidebara */
+.sidebar {
+    background: linear-gradient(to bottom, #a80000, #750000); /* Tamno crvena nijansa */
+    transition: all 0.3s ease-in-out;
+    min-height: 100vh;
+    width: 250px;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 10px;
+}
+
+.sidebar .nav-link {
+    color: #ffffff;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 0.35rem;
+    padding: 0.75rem 1rem;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #ffffff;
+    color: #a80000;
+    font-weight: bold;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+    color: inherit;
+}
+
+.sidebar .sidebar-heading {
+    color: #ffffff;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+
+/* Brend logo */
+.sidebar-brand {
+    padding: 1.5rem 1rem;
+}
+
+.sidebar-brand-icon img {
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.sidebar-brand-text {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Prelaz prilikom širenja */
+.sidebar.toggled {
+    width: 70px !important;
+    overflow: hidden;
+}
+
+.sidebar.toggled .nav-link span {
+    display: none;
+}
+
+.sidebar.toggled .sidebar-brand-text {
+    display: none;
+}
+
+/* Toggler dugme */
+#sidebarToggle {
+    background-color: #ffffff;
+    color: #a80000;
+}
+
+#sidebarToggle:hover {
+    background-color: #a80000;
+    color: #ffffff;
+}
+/* Glavni wrapper sidebar-a */
+#wrapper {
+    background-color: #0f0f0f;
+    min-height: 100vh;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(to bottom, #6f0000, #311d1d); /* crveno staklo */
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    width: 250px;
+}
+
+/* Logo */
+.sidebar .sidebar-brand {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.sidebar .sidebar-brand img {
+    max-width: 60px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px white);
+}
+.sidebar .sidebar-brand-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Nav Items */
+.sidebar .nav-item {
+    margin: 0.5rem 0;
+}
+
+.sidebar .nav-link {
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.sidebar .nav-link i {
+    margin-right: 12px;
+    font-size: 1.1rem;
+}
+
+/* Hover i active efekti */
+.sidebar .nav-link:hover,
+.sidebar .nav-item.active .nav-link {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+    color: #fff;
+}
+
+/* Heading */
+.sidebar .sidebar-heading {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #f8d7da;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Collapse inner items */
+.collapse-inner a {
+    color: #f8f9fa;
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    transition: background 0.2s;
+}
+.collapse-inner a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* Divider */
+.sidebar-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 1rem 0;
+}
+
+/* Sidebar Toggler Button */
+#sidebarToggle {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s;
+}
+#sidebarToggle:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsivnost */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+
+
+</style>
+
 </style>
 <body id="page-top">
 
@@ -77,7 +495,7 @@
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <div class="text-center">
-                        <img src="../startbootstrap-sb-admin-2-gh-pages/img/jed-removebg-preview.jpg" alt="Logo" style="width: 50px; height: auto; margin-bottom: 10px;">
+                        <img src="../startbootstrap-sb-admin-2-gh-pages/img/jed-removebg-preview.png" alt="Logo" style="width: 50px; height: auto; margin-bottom: 10px;">
                   
                     </div>
                 </div>
@@ -102,21 +520,7 @@
                 Interface
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
-                    </div>
-                </div>
-            </li>
+            
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
@@ -170,7 +574,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
+                    <span>Klupske Vijesti</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
@@ -249,122 +653,101 @@
                             </div>
                         </li>
 
-                        <!-- Nav Item - Alerts -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-bell fa-fw"></i>
-                                <!-- Counter - Alerts -->
-                                <span class="badge badge-danger badge-counter">3+</span>
-                            </a>
-                            <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header">
-                                    Alerts Center
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-primary">
-                                            <i class="fas fa-file-alt text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 12, 2019</div>
-                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-success">
-                                            <i class="fas fa-donate text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
-                                        $290.29 has been deposited into your account!
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
-                                        Spending Alert: We've noticed unusually high spending for your account.
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                            </div>
-                        </li>
+                        <!-- Nav Item - Obavijesti -->
+<li class="nav-item dropdown no-arrow mx-1">
+    <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-bell fa-fw text-danger"></i>
+        <span class="badge badge-danger badge-counter">3+</span>
+    </a>
+    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+        aria-labelledby="alertsDropdown">
+        <h6 class="dropdown-header text-white bg-danger">
+            Centar Obavijesti
+        </h6>
+        <a class="dropdown-item d-flex align-items-center" href="#">
+            <div class="mr-3">
+                <div class="icon-circle bg-danger">
+                    <i class="fas fa-file-alt text-white"></i>
+                </div>
+            </div>
+            <div>
+                <div class="small text-gray-500">Maj 12, 2025</div>
+                <span class="font-weight-bold">Novi mjesečni izvještaj je spreman za preuzimanje!</span>
+            </div>
+        </a>
+        <a class="dropdown-item d-flex align-items-center" href="#">
+            <div class="mr-3">
+                <div class="icon-circle bg-danger">
+                    <i class="fas fa-futbol text-white"></i>
+                </div>
+            </div>
+            <div>
+                <div class="small text-gray-500">Maj 10, 2025</div>
+                Derbi utakmica zakazana protiv Borca Banja Luka!
+            </div>
+        </a>
+        <a class="dropdown-item d-flex align-items-center" href="#">
+            <div class="mr-3">
+                <div class="icon-circle bg-danger">
+                    <i class="fas fa-exclamation-triangle text-white"></i>
+                </div>
+            </div>
+            <div>
+                <div class="small text-gray-500">Maj 5, 2025</div>
+                Visoka potrošnja budžeta zabilježena za mjesec april.
+            </div>
+        </a>
+        <a class="dropdown-item text-center small text-gray-500" href="#">Prikaži sve obavijesti</a>
+    </div>
+</li>
 
-                        <!-- Nav Item - Messages -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-envelope fa-fw"></i>
-                                <!-- Counter - Messages -->
-                                <span class="badge badge-danger badge-counter">7</span>
-                            </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="messagesDropdown">
-                                <h6 class="dropdown-header">
-                                    Message Center
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div class="font-weight-bold">
-                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
-                                            problem I've been having.</div>
-                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
-                                        <div class="status-indicator"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">I have the photos that you ordered last month, how
-                                            would you like them sent to you?</div>
-                                        <div class="small text-gray-500">Jae Chun · 1d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
-                                        <div class="status-indicator bg-warning"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with
-                                            the progress so far, keep up the good work!</div>
-                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
-                                            alt="...">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
-                                            told me that people say this to all dogs, even if they aren't good...</div>
-                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-                            </div>
-                        </li>
+<!-- Nav Item - Poruke -->
+<li class="nav-item dropdown no-arrow mx-1">
+    <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-envelope fa-fw text-danger"></i>
+        <span class="badge badge-danger badge-counter">7</span>
+    </a>
+    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+        aria-labelledby="messagesDropdown">
+        <h6 class="dropdown-header text-white bg-danger">
+            Poruke Kluba
+        </h6>
+        <a class="dropdown-item d-flex align-items-center" href="#">
+            <div class="dropdown-list-image mr-3">
+                <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
+                <div class="status-indicator bg-success"></div>
+            </div>
+            <div class="font-weight-bold">
+                <div class="text-truncate">Pozdrav! Možete li mi pomoći oko članarine za juniore?</div>
+                <div class="small text-gray-500">Amar Avdić · 1h</div>
+            </div>
+        </a>
+        <a class="dropdown-item d-flex align-items-center" href="#">
+            <div class="dropdown-list-image mr-3">
+                <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
+                <div class="status-indicator"></div>
+            </div>
+            <div>
+                <div class="text-truncate">Fotografije sa utakmice protiv Slobode su spremne.</div>
+                <div class="small text-gray-500">Marko Petrović · 1d</div>
+            </div>
+        </a>
+        <a class="dropdown-item d-flex align-items-center" href="#">
+            <div class="dropdown-list-image mr-3">
+                <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
+                <div class="status-indicator bg-warning"></div>
+            </div>
+            <div>
+                <div class="text-truncate">Izvještaj o juniorskoj selekciji izgleda odlično. Svaka čast!</div>
+                <div class="small text-gray-500">Selma Hadžić · 2d</div>
+            </div>
+        </a>
+        <a class="dropdown-item text-center small text-gray-500" href="#">Prikaži sve poruke</a>
+    </div>
+</li>
+
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -379,18 +762,8 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
-                                </a>
+                            
+                               
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -590,6 +963,55 @@
         </div>
 
     </div>
+
+    <canvas id="zaradaChart" width="100%" height="40"></canvas>
+   
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-jedinstvo">Mjesečna Zarada</h6>
+        </div>
+        <div class="card-body">
+            <canvas id="zaradaChart"></canvas>
+        </div>
+    </div>
+    
+
+<script>
+    
+const ctx = document.getElementById('zaradaChart').getContext('2d');
+
+new Chart(ctx, {
+    type: 'line', // Može biti: line, bar, pie, etc.
+    data: {
+        labels: ['Januar', 'Februar', 'Mart', 'April', 'Maj', 'Juni'],
+        datasets: [{
+            label: 'Zarada ($)',
+            data: [4000, 6000, 8000, 10000, 12000, 14000],
+            backgroundColor: 'rgba(200, 16, 46, 0.2)',
+            borderColor: '#c8102e',
+            borderWidth: 2,
+            tension: 0.3,
+            fill: true,
+            pointBackgroundColor: '#c8102e'
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: true,
+                position: 'top'
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+</script>
     <!-- Kraj glavnog sadržaja -->
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
