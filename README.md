@@ -1,22 +1,25 @@
-# Sistem za upravljanje fudbalskom ekipom
+Thanks for downloading this theme!
 
-## 🎯 Cilj projekta
-Razviti sistem za evidenciju igrača, treninga, utakmica i statistika fudbalskog kluba.
+## Other Useful Links
 
-## 🛠️ Tehnologije
-- HTML, CSS
-- PHP
-- MySQL
+**ThemeWagon** is a great source for downloading free HTML templates built with the latest technology.
 
-## ✅ Funkcionalnosti koje učenici trebaju implementirati
-1. Dodavanje i uređivanje igrača (ime, pozicija, broj, statistike)
-2. Planiranje treninga i utakmica (datum, protivnik, lokacija)
-3. Pregled učinka igrača (golovi, asistencije, minutaža)
-4. Administracija korisnika i uloga
-5. Statistika po sezoni
+To download free templates, follow this link: https://themewagon.com/theme_tag/free/
 
-## 💻 Uloge
-- **Trener/Admin**: upravljanje timom, treninzima i statistikama
-- **Igrač**: pregled vlastitih podataka i trening rasporeda
+Besides that, you can buy our premium templates for making your web development experience unforgettable.
 
-## 😉 Upustvo za github: https://github.com/zinaid/ArcosixGitTutorial/blob/main/tutorial.md
+Visit the store from here: https://themewagon.com/theme-categories/premium-templates/
+
+Alternatively, here's our top most trending and selling items:
+
+* [**Sparrow**](https://themewagon.com/themes/sparrow/) - A multipurpose template made with Bootstrap 4.1 and world's finest animation.
+* [**Posh**](https://themewagon.com/themes/posh-html5-bootstrap-4-template/) - Bootstrap 4 template with a myriad number of ready-to-deploy sections. 
+* [**Elixir**](https://themewagon.com/themes/elixir-elegant-html5-bootstrap-template-consultancy-agency-website/) - Bootstrap 4 agency template. Best for smooth animated scrolling. 
+* [**Freya**](https://themewagon.com/themes/bootstrap-4-premium-interior-design-template-freya/) - Interior design template made with Bootstrap 4. 
+* [**Reign Pro**](https://themewagon.com/themes/reign-pro-premium-corporate-agency-html5-template/) - A corporate template with a visually unique design scheme. 
+* [**Boots4**](https://themewagon.com/themes/first-ever-bootstrap-4-template/) - One of the first Bootstrap 4 templates ever made on earth. 
+* [**Hideaway**](https://themewagon.com/themes/hideaway/) - A template for resorts. Built with Bootstrap 4. 
+* [**Baikal**](https://themewagon.com/themes/bootstrap-4-startup-small-business-website-template/) - A smart Bootstrap template for start-up. 
+* [**Mega Discount**](https://themewagon.com/themes/mega-discount-bundle/) - A bundle of 26 HTML5 templates; best value for your money. 
+
+
