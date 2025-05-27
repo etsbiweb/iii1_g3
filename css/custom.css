@@ -533,7 +533,7 @@
  .about-us {
      float: left;
      width: 100%;
-     background: url('../images/banner1.png');
+     background: url('../images/pozadina.jpg');
      min-height: 220px;
      background-position: center center;
      background-size: cover;
@@ -619,7 +619,7 @@
 }
  footer#footer {
      min-height: auto;
-     background: #111;
+     background: #000000;
      float: left;
      width: 100%;
      padding: 0;
@@ -957,7 +957,7 @@
      float: left;
      width: 100%;
      min-height: 750px;
-     background-image: url('../images/ddd.jpg');
+     background-image: url('../images/pozadina.jpg');
      background-position: center center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -1152,9 +1152,10 @@ section#contant h4 {
      float: left;
      width: 100%;
      line-height: 24px;
-     font-size: 14px;
-     text-align: left;
+     font-size: 20px;
      font-weight: 300;
+     text-align: left;
+     
 }
  .main-heading p {
      color: #363636;
@@ -1310,11 +1311,12 @@ section#contant h4 {
      transform: scale(1.2);
 }
  .aboutus h3 {
-     font-size: 22px;
+     font-size: 30px;
      padding: 0;
      text-align: left;
-     font-weight: 500;
-     margin-bottom: 10px;
+     font-weight: 800;
+     margin-bottom: 20px;
+    
 }
  .icon-list {
      float: left;
