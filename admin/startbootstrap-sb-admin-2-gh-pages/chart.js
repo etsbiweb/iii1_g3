@@ -9,7 +9,7 @@ new Chart(ctx, {
             data: [5000, 7000, 9000, 12000, 15000, 17000],
             backgroundColor: 'rgba(255, 0, 0, 0.2)',
             borderColor: '#c8102e',
-            borderWidth: 2
+            borderWidth: 3
         }]
     },
     options: {

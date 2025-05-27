@@ -33,10 +33,37 @@
    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
    <script src="js/3dslider.js"></script>
    </head>
+   <style>
+      footer#footer {
+    min-height: auto;
+    background: #000000;
+    float: left;
+    width: 100%;
+    padding: 0;
+    border-top: solid #ddd 1px;
+    position: relative;
+    background-position: center top;
+    background-size: cover;
+}.news-post-widget img {
+  margin-bottom: 10px;
+}
+
+.news-post-detail h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.news-post-widget {
+  margin-bottom: 30px;
+}
+
+   </style>
    <body class="game_info" data-spy="scroll" data-target=".header">
       <!-- LOADER -->
-      <div id="preloader">
-         <img class="preloader" src="images/loading-img.gif" alt="">
+      <!-- LOADER -->
+     <div id="preloader">
+         <img class="preloader" src="images/logo.jpg" alt="">
       </div>
       <!-- END LOADER -->
       <section id="top">
@@ -47,7 +74,7 @@
                      <div class="col-md-6">
                         <div class="full">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                              <a href="index.html"><img src="jedinstvo slike/FK jedinsatvo.png"style="width: 32%;height:32%" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -55,20 +82,20 @@
                         <div class="right_top_section">
                            <!-- social icon -->
                            <ul class="social-icons pull-left">
-                              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                              <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
-                              <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                              <li><a class="facebook" href="https://www.facebook.com/nkj.ba/"><i class="fa fa-facebook"></i></a></li>
+                              <li><a class="twitter" href="https://x.com/nk_jedinstvo"><i class="fa fa-twitter"></i></a></li>
+                              <li><a class="instagram" href="https://www.instagram.com/nkj_bihac/"><i class="fa fa-instagram"></i></a></li>
+                              
                            </ul>
                            <!-- end social icon -->
                            <!-- button section -->
                            <ul class="login">
                               <li class="login-modal">
-                                 <a href="#" class="login"><i class="fa fa-user"></i>Login</a>
+                                 <a href="admin/startbootstrap-sb-admin-2-gh-pages/login.html" class="login"><i class="fa fa-user"></i>Login</a>
                               </li>
                               <li>
                                  <div class="cart-option">
-                                    <a href="#"><i class="fa fa-shopping-cart"></i>Register</a>
+                                    <a href="admin/startbootstrap-sb-admin-2-gh-pages/register.html"><i class="fa fa-shopping-cart"></i>Register</a>
                                  </div>
                               </li>
                            </ul>
@@ -91,66 +118,17 @@
                                        <span class="icon-bar"></span>
                                        <span class="icon-bar"></span>
                                        </button>
-                                       <a class="navbar-brand" href="#">Menu</a>
-                                    </div>
-                                    <div class="collapse navbar-collapse js-navbar-collapse">
-                                       <ul class="nav navbar-nav">
-                                          <li class="active"><a href="index.html">Home</a></li>
-                                          <li><a href="about.html">About</a></li>
-                                          <li><a href="team.html">Team</a></li>
-                                          <li><a href="news.html">News</a></li>
-                                          <li class="dropdown mega-dropdown">
-                                             <a href="match" class="dropdown-toggle" data-toggle="dropdown">Match<span class="caret"></span></a>				
-                                             <ul class="dropdown-menu mega-dropdown-menu">
-                                                <li class="col-sm-8">
-                                                   <ul>
-                                                      <li class="dropdown-header">Men Collection</li>
-                                                      <div id="menCollection" class="carousel slide" data-ride="carousel">
-                                                         <div class="carousel-inner">
-                                                            <div class="item active">
-                                                               <div class="banner-for-match"><a href="#"><img class="img-responsive" src="images/match-banner1.jpg" alt="#" /></a></div>
-                                                            </div>
-                                                            <!-- End Item -->
-                                                            <div class="item">
-                                                               <div class="banner-for-match"><a href="#"><img class="img-responsive" src="images/match-banner1.jpg" alt="#" /></a></div>
-                                                            </div>
-                                                            <!-- End Item -->
-                                                            <div class="item">
-                                                               <div class="banner-for-match"><a href="#"><img class="img-responsive" src="images/match-banner1.jpg" alt="#" /></a></div>
-                                                            </div>
-                                                            <!-- End Item -->                                
-                                                         </div>
-                                                         <!-- End Carousel Inner -->
-                                                         <!-- Controls -->
-                                                         <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
-                                                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                                         <span class="sr-only">Previous</span>
-                                                         </a>
-                                                         <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
-                                                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                                         <span class="sr-only">Next</span>
-                                                         </a>
-                                                      </div>
-                                                      <!-- /.carousel -->
-                                                   </ul>
-                                                </li>
-                                                <li class="col-sm-4">
-                                                   <ul class="menu-inner">
-                                                      <li class="dropdown-header">Next Matchs</li>
-                                                      <li><a href="#">Contrary vs classical</a></li>
-                                                      <li><a href="#">Discovered vs undoubtable</a></li>
-                                                      <li><a href="#">Contrary vs classical</a></li>
-                                                      <li><a href="#">Discovered vs undoubtable</a></li>
-                                                      <li><a href="#">Contrary vs classical</a></li>
-                                                      <li><a href="#">Discovered vs undoubtable</a></li>
-                                                      <li><a href="#">Contrary vs classical</a></li>
-                                                      <li><a href="#">Discovered vs undoubtable</a></li>
-                                                   </ul>
-                                                </li>
-                                             </ul>
-                                          </li>
-                                          <li><a href="blog.html">Blog</a></li>
-                                          <li><a href="contact.html">contact</a></li>
+                                       <a class="navbar-brand" href="#">Meni</a>
+                                 </div>
+                                 <div class="collapse navbar-collapse js-navbar-collapse">
+                                    <ul class="nav navbar-nav">
+                                       <li class="active"><a href="index.html">Početna</a></li>
+                                       <li><a href="about.html">O nama</a></li>
+                                       <li><a href="team.html">Naš tim</a></li>
+                                       <li><a href="news.html">Novosti</a></li>
+                                       
+                                       <li><a href="blog.html">Blog</a></li>
+                                       <li><a href="contact.html">Kontakt</a></li>
                                        </ul>
                                     </div>
                                     <!-- /.nav-collapse -->
@@ -187,140 +165,156 @@
             </div>
          </div>
       </section>
-      <section id="contant" class="contant">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-9 col-sm-12 col-xs-12">
-                  <div class="news-post-holder">
-                     <div class="col-lg-6 col-sm-6 col-xs-12">
-                        <div class="news-post-widget">
-                           <img class="img-responsive" src="jedinstvo slike/67efc6a763bd44.91139228.jpg" alt="">
-                           <div class="news-post-detail">
-                              <span class="date">20 march 2016</span>
-                              <h2><a href="blog-detail.html">
-                                 Dvije ekipe predpionira i jedna ekipa pionira našeg NK Jedinstva igrale su Zimsku omladinsku ligu USK u Cazinu.</a></h2>
-                              <p>NK Jedinstvo nastupilo u Zimskoj omladinskoj ligi</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-6 col-sm-6 col-xs-12">
-                        <div class="news-post-widget">
-                           <img class="img-responsive" src="jedinstvo slike/dogovor.jpg" alt="">
-                           <div class="news-post-detail">
-                              <span class="date">20 march 2016</span>
-                              <h2><a href="blog-detail.html">Nogometaši bihaćkog Jedinstva u okviru 24. kola Prve lige Federacije Bosne i Hercegovine dočekuju ekipu Tomislava.</a></h2>
-                              <p>Adžem pred Tomislav: Pozivam naše navijače da nas podrže u još većem broju, jer znam koliko to motiviše igrače</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-6 col-sm-6 col-xs-12">
-                        <div class="news-post-widget">
-                           <img class="img-responsive" src="jedinstvo slike/rii.jpg" alt="">
-                           <div class="news-post-detail">
-                              <span class="date">20 march 2016</span>
-                              <h2><a href="blog-detail.html">Kako je izgledao tvoj prvi susret s fudbalom?</a></h2>
-                              <p> Benjamin Kurić: Kad sam zaigrao za prvi tim, ostvarili su se snovi dječaka koji je nekad s tribina gledao i navijao</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-6 col-sm-6 col-xs-12">
-                        <div class="news-post-widget">
-                           <img class="img-responsive" src="jedinstvo slike/dogovor.jpg"  >
-                           <div class="news-post-detail">
-                              <span class="date">20 march 2016</span>
-                              <h2><a href="blog-detail.html">
-                                 </a></h2>
-                              <p></p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-sm-6 col-xs-12">
-                  <div class="content-widget top-story" style="background: url(images/top-story-bg.jpg);">
-                     <div class="top-stroy-header">
-                        <h2>Top Soccer Headlines Story <a href="#" class="fa fa-fa fa-angle-right"></a></h2>
-                        <span class="date">July 05, 2017</span>
-                        <h2>Other Headlines</h2>
-                     </div>
-                     <ul class="other-stroies">
-                        <li><a href="#">Wenger Vardy won't start</a></li>
-                        <li><a href="#">Evans: Vardy just</a></li>
-                        <li><a href="#">Pires and Murray </a></li>
-                        <li><a href="#">Okazaki backing</a></li>
-                        <li><a href="#">Wolfsburg's Rodriguez</a></li>
-                        <li><a href="#">Jamie Vardy compared</a></li>
-                        <li><a href="#">Arsenal target Mkhitaryan</a></li>
-                        <li><a href="#">Messi wins libel case.</a></li>
-                     </ul>
-                  </div>
-                  <aside id="sidebar" class="right-bar">
-                     <div class="banner">
-                        <img class="img-responsive" src="images/adds-3.jpg" alt="#">
-                     </div>
-                  </aside>
-               </div>
+    <section id="contant" class="contant">
+  <div class="container">
+    <div class="row">
+      <!-- Lijeva kolona -->
+      <div class="col-lg-9 col-sm-12 col-xs-12">
+        <div class="row news-post-holder">
+
+          <!-- Prva kartica -->
+          <div class="col-lg-6 col-sm-6 col-xs-12" style="margin-bottom: 10px;">
+            <div class="news-post-widget">
+              <img class="img-responsive" src="jedinstvo slike/67efc6a763bd44.91139228.jpg" alt="" style="margin-bottom: 2px;">
+              <div class="news-post-detail">
+                <span class="date">10. mart 2025</span>
+                <h2 style="margin-top: 10px;"><a href="blog-detail.html">Dvije ekipe predpionira i jedna ekipa pionira našeg NK Jedinstva igrale su Zimsku omladinsku ligu USK u Cazinu.</a></h2>
+                <p>NK Jedinstvo nastupilo u Zimskoj omladinskoj ligi</p>
+              </div>
             </div>
-         </div>
-      </section>
-      <footer id="footer" class="footer">
+          </div>
+
+          <!-- Druga kartica -->
+          <div class="col-lg-6 col-sm-6 col-xs-12" style="margin-bottom: 30px;">
+            <div class="news-post-widget">
+              <img class="img-responsive" src="jedinstvo slike/dogovor.jpg" alt="" style="margin-bottom: 10px;">
+              <div class="news-post-detail">
+                <span class="date">20. mart 2025</span>
+                <h2 style="margin-top: 10px;"><a href="blog-detail.html">Nogometaši bihaćkog Jedinstva dočekuju ekipu Tomislava.</a></h2>
+                <p>Adžem pred Tomislav: Pozivam naše navijače da nas podrže u još većem broju</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Treća kartica -->
+          <div class="col-lg-6 col-sm-6 col-xs-12" style="margin-bottom: 30px;">
+            <div class="news-post-widget">
+              <img class="img-responsive" src="jedinstvo slike/rii.jpg" alt="" style="margin-bottom: 10px;">
+              <div class="news-post-detail">
+                <span class="date">02. april 2025</span>
+                <h2 style="margin-top: 10px;"><a href="blog-detail.html">Kako je izgledao tvoj prvi susret s fudbalom?</a></h2>
+                <p>Benjamin Kurić: Ostvario sam snove dječaka s tribina!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Četvrta kartica -->
+          <div class="col-lg-6 col-sm-6 col-xs-12" style="margin-bottom: 30px;">
+            <div class="news-post-widget">
+              <img class="img-responsive" src="jedinstvo slike/dogovor.jpg" alt="" style="margin-bottom: 10px;">
+              <div class="news-post-detail">
+                <span class="date">5. mart 2025</span>
+                <h2 style="margin-top: 10px;"><a href="blog-detail.html">Naslov vijesti ide ovdje</a></h2>
+                <p>Kratki opis vijesti ide ovdje...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Desna kolona -->
+      <div class="col-lg-3 col-sm-6 col-xs-12">
+        <div class="content-widget top-story" style="background: url(images/top-story-bg.jpg); padding: 20px; border-radius: 10px;">
+          <div class="top-stroy-header">
+            <h2>Najnovije vijesti iz NK Jedinstvo Bihać <a href="#" class="fa fa-angle-right"></a></h2>
+            <span class="date">Maj 27, 2025</span>
+            <h2>Druge vijesti</h2>
+          </div>
+          <ul class="other-stroies">
+            <li><a href="#">Jedinstvo savladalo Slobodu na domaćem terenu</a></li>
+            <li><a href="#">Trener najavio promjene u sastavu za derbi</a></li>
+            <li><a href="#">Podrška navijača sve veća pred odlučujući meč</a></li>
+            <li><a href="#">Povratak povrijeđenih igrača u tim</a></li>
+            <li><a href="#">U-19 selekcija Jedinstva osvojila turnir</a></li>
+            <li><a href="#">Novi transfer: Stiže pojačanje iz Premijer lige</a></li>
+            <li><a href="#">Stadion pod Borićima spreman za naredni susret</a></li>
+            <li><a href="#">Izjava kapitena nakon pobjede protiv Zvijezde</a></li>
+          </ul>
+        </div>
+
+        <aside id="sidebar" class="right-bar" style="margin-top: 20px;">
+          <div class="banner">
+            <img class="img-responsive" src="images/dd.jpg" alt="#">
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer id="footer" class="footer">
          <div class="container">
             <div class="row">
+               <!-- Logo i opis -->
                <div class="col-md-4">
                   <div class="full">
                      <div class="footer-widget">
                         <div class="footer-logo">
-                           <a href="#"><img src="images/footer-logo.png" alt="#" /></a>
+                           <a href="#"><img src="images/nkj.png" alt="Jedinstvo Bihać Logo" /></a>
                         </div>
-                        <p>Most of our events have hard and easy route choices as we are always keen to encourage new riders.</p>
+                        <p>NK Jedinstvo Bihać – Klub sa srcem! Pratite nas i podržite crveno-bijele u borbi za vrh Prve lige FBiH.</p>
                         <ul class="social-icons style-4 pull-left">
-                           <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                           <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                           <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
-                           <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                         <li><a class="facebook" href="https://www.facebook.com/nkj.ba/"><i class="fa fa-facebook"></i></a></li>
+                              <li><a class="twitter" href="https://x.com/nk_jedinstvo"><i class="fa fa-twitter"></i></a></li>
+                              <li><a class="instagram" href="https://www.instagram.com/nkj_bihac/"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                      </div>
                   </div>
                </div>
+               <!-- Navigacija -->
                <div class="col-md-2">
                   <div class="full">
                      <div class="footer-widget">
-                        <h3>Menu</h3>
+                        <h3>Meni</h3>
                         <ul class="footer-menu">
-                           <li><a href="about.html">About Us</a></li>
-                           <li><a href="team.html">Our Team</a></li>
-                           <li><a href="news.html">Latest News</a></li>
-                           <li><a href="matche.html">Recent Matchs</a></li>
-                           <li><a href="blog.html">Our Blog</a></li>
-                           <li><a href="contact.html">Contact Us</a></li>
+                           <li><a href="about.html">O nama</a></li>
+                           <li><a href="team.html">Naš tim</a></li>
+                           <li><a href="news.html">Novosti</a></li>
+                           <li><a href="blog.html">Blog</a></li>
+                           <li><a href="contact.html">Kontakt</a></li>
                         </ul>
                      </div>
                   </div>
                </div>
+               <!-- Kontakt -->
                <div class="col-md-3">
                   <div class="full">
                      <div class="footer-widget">
-                        <h3>Contact us</h3>
+                        <h3>Kontakt</h3>
                         <ul class="address-list">
-                           <li><i class="fa fa-map-marker"></i> Lorem Ipsum is simply dummy text of the printing..</li>
-                           <li><i class="fa fa-phone"></i> 123 456 7890</li>
-                           <li><i style="font-size:20px;top:5px;" class="fa fa-envelope"></i> demo@gmail.com</li>
+                           <li><i class="fa fa-map-marker"></i> Stadion Pod Borićima, Bihać, BiH</li>
+                           <li><i class="fa fa-phone"></i> +387 37 123 456</li>
+                           <li><i class="fa fa-envelope" style="font-size:20px;top:5px;"></i> info@jedinstvobihac.ba</li>
                         </ul>
                      </div>
                   </div>
                </div>
+               <!-- Mapa -->
                <div class="col-md-3">
                   <div class="full">
                      <div class="contact-footer">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120615.72236587871!2d73.07890527988283!3d19.140910987164396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1527759905404" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.780496551727!2d15.861108815705282!3d44.81342207909808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4764a6a0e0bfc3ab%3A0x4f9cbdfc2b3e58b5!2sStadion%20Pod%20Bori%C4%87ima!5e0!3m2!1sen!2sba!4v1700000000000" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen></iframe>
                      </div>
                   </div>
                </div>
             </div>
          </div>
+         <!-- Footer dno -->
          <div class="footer-bottom">
             <div class="container">
-               <p>Copyright © 2018 Distributor: <a href="https://themewagon.com/" target="_blank">ThemWagon</a></p>
+               <p>&copy; 2025 NK Jedinstvo Bihać. Sva prava zadržana.</p>
             </div>
          </div>
       </footer>

@@ -956,8 +956,8 @@
  .inner-page-banner {
      float: left;
      width: 100%;
-     min-height: 500px;
-     background-image: url('../images/about.png');
+     min-height: 750px;
+     background-image: url('../images/ddd.jpg');
      background-position: center center;
      background-repeat: no-repeat;
      background-size: cover;
