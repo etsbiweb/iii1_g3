@@ -745,7 +745,7 @@
      margin: 7px 0;
 }
  .other-stroies li a {
-     padding: 9px 30px;
+     line-height: 14px!important;
      color: #555;
      font-weight: 400;
      font-size: 14px;
