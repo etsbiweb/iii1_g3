@@ -528,7 +528,7 @@
  .matchs-info {
      float: left;
      width: 100%;
-     background: #ffcb05;
+     background: red;
 }
  .about-us {
      float: left;
@@ -743,15 +743,16 @@
  .other-stroies li {
      position: relative;
      margin: 7px 0;
+      
 }
  .other-stroies li a {
-     line-height: 14px!important;
+     
      color: #555;
      font-weight: 400;
      font-size: 14px;
 }
  .other-stroies li::before {
-     content: "\f105";
+      
      font-family: fontawesome;
      position: absolute;
      left: 15px;

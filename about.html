@@ -51,9 +51,6 @@ section#contant .slika{
   width: 85%;          /* manja širina od teksta */
   display: block;
   margin: 0 auto 0 auto;  /* centriraj sliku + razmak ispod */
-  
- 
-  
 }
 
 
@@ -66,6 +63,23 @@ section#contant p {
   color: #333;
   text-align: justify; /* ili 'center' ako želiš da je tekst centriran */
 }
+@media (max-width: 768px) {
+  section#contant img {
+    width: 100%;              /* koristi punu širinu roditelja */
+    max-width: 350px;         /* ali ne prelazi 350px */
+    height: auto;             /* zadrži proporcije slike */
+    box-sizing: border-box;
+    display: block;           /* osiguraj da slike ne lebde */
+    margin: 0 auto;           /* centriraj sve slike */
+  }
+
+  section#contant .slika {
+    width: 90%;               /* malo veća širina za bolje iskorištenje prostora */
+    margin: 10px auto;        /* centriraj i dodaj vertikalni razmak */
+    display: block;
+  }
+}
+
 
 
    </style>
@@ -262,7 +276,7 @@ Nakon tog neuspjeha u doigravanju za prvaka BiH, Jedinstvo počinje rezultatski 
                      <div class="footer-widget">
                         <h3>Meni</h3>
                         <ul class="footer-menu">
-                           <li><a href="about.html">O nama</a></li>
+                           <li><a href="index.html">Početna</a></li>
                            <li><a href="team.html">Naš tim</a></li>
                            <li><a href="news.html">Novosti</a></li>
                            <li><a href="blog.html">Blog</a></li>

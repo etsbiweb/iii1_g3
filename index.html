@@ -221,38 +221,38 @@
                             <li><span class="minutes">0</span> Minutes</li>
                             <li><span class="seconds">0</span> Seconds</li>
                         </ul>
-                        <span id="date-time">06/10/2025 / 17:00 PM</span>
+                        <span id="date-time">05/31/2025 / 17:30 PM</span>
                     </div>
                 </div>
             </div>
         </div>
 
       <script>
-         // Set the date we're counting down to
-         const countDownDate = new Date("June 10, 2025 17:00:00").getTime();
-         // Update the countdown every 1 second
-         const x = setInterval(function() {
-             // Get today's date and time
-             const now = new Date().getTime();
-             // Find the distance between now and the countdown date
-             const distance = countDownDate - now;
-             // Time calculations for days, hours, minutes and seconds
-             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-             // Display the result in the elements with corresponding classes
-             document.querySelector(".days").innerHTML = days;
-             document.querySelector(".hours").innerHTML = hours;
-             document.querySelector(".minutes").innerHTML = minutes;
-             document.querySelector(".seconds").innerHTML = seconds;
-             // If the countdown is over, display a message
-             if (distance < 0) {
-                 clearInterval(x);
-                 document.querySelector(".right-match-time").innerHTML = "The event has started!";
-             }
-         }, 1000);
-     </script>
+    // Postavi datum i vrijeme utakmice
+    const countDownDate = new Date("May 31, 2025 17:30:00").getTime();
+
+    // Ažuriraj odbrojavanje svake sekunde
+    const x = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = countDownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.querySelector(".days").innerHTML = days;
+        document.querySelector(".hours").innerHTML = hours;
+        document.querySelector(".minutes").innerHTML = minutes;
+        document.querySelector(".seconds").innerHTML = seconds;
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.querySelector(".right-match-time").innerHTML = "Utakmica je počela!";
+        }
+    }, 1000);
+</script>
+
       <section id="contant" class="contant">
          <div class="container">
             <div class="row">
