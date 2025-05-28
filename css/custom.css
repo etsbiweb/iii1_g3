@@ -2031,3 +2031,6 @@ body section#contant .post-info span h4 {
          min-height: auto;
     }
 }
+.full__mt {
+    margin: 20px auto !important;
+}
